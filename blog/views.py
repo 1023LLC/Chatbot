@@ -8,4 +8,5 @@ def index(request):
 
 
 def getResponse(request):
-    
+    userMessage = request.GET.get('userMessage')
+    return HttpResponse(userMessage)
